@@ -1,0 +1,19 @@
+public class shapes {
+    private int length,width,perimeter,area;
+    public static void main(String[]arg){
+        shapes square=new shapes();
+        square.calculateArea(5,5);
+        square.calculatePerimeter(5,5);
+        shapes rectangle=new shapes();
+        rectangle.calculateArea(5,10);
+        rectangle.calculatePerimeter(5,10);
+    }
+    public void calculateArea(int length,int width){
+        area=length*width;
+        System.out.println(area);
+    }
+    public void calculatePerimeter(int length,int width){
+        perimeter=(length+width)*2;
+        System.out.println(perimeter);
+    }
+}
