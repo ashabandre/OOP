@@ -1,0 +1,21 @@
+
+public class MyArray {
+     public int array[] ={-5,-4,-3,-2,-1,0,1,2,3,4,5};
+    public int max = array[0];
+    public int count;
+   
+    public static void main(String[]args){
+        MyArray max_array = new MyArray();
+        max_array.obtain();
+    }
+    public void obtain(){
+        for (count=0; count<array.length; count ++){
+            if (max < array[count]){
+                max = array[count]; 
+            }
+        }
+        System.out.println("The largest value in the array is: " +max);
+    }
+   
+   
+}
